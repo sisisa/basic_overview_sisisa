@@ -17,7 +17,7 @@ https://element-plus.org/en-US/component/dialog.html#slots
 
 - before-closeで「閉じる前の動き」を決められる。
 
-## ポイント
+### ポイント
 - before-closeは、×ボタンや背景クリックで閉じるときにだけ動く。
 - 自分で作った「閉じるボタン」には、自分で処理を書く必要がある。
 
@@ -38,7 +38,7 @@ https://element-plus.org/en-US/component/dialog.html#slots
 
 - このとき、append-to-bodyをtrueにしないと表示が変になる。
 
-## ポイント
+### ポイント
 - ネストはできるだけ避ける。必要な場合は、兄弟（並列）として作った方がいい。
 
 ## ダイアログの中央配置
@@ -46,7 +46,7 @@ https://element-plus.org/en-US/component/dialog.html#slots
 
 - 中の内容（body）は自分でCSSで真ん中にする必要あり。
 
-## ポイント
+### ポイント
 - 中身は「最初に開いたとき」まで実際のHTMLとして表示されないので、refやDOM操作を使うなら、openイベントの中で行う。
 
 ## 整列された状態で中央に開く
@@ -59,7 +59,7 @@ https://element-plus.org/en-US/component/dialog.html#slots
 
 - 重たい処理があるときなどに使うと、速く動くようになる。
 
-## 注意
+### 注意
 - この場合、開く前には中身は表示されない。最初に出るのは「外枠」「ヘッダー」「フッター」だけ。
 
 ## ダイアログをドラッグする
@@ -67,13 +67,13 @@ https://element-plus.org/en-US/component/dialog.html#slots
 
 - overflowをtrueにすると、画面の外まで動かせる。
 
-## ポイント
+### ポイント
 - modal = falseにするときは、必ずappend-to-body = trueにしないと位置が変になる。
 
 ## 全画面で開く
 - fullscreenをtrueにすると、画面いっぱいにダイアログが広がる。
 
-## 注意
+### 注意
 - このとき、width、top、draggableの設定は効かなくなる。
 
 ## モーダル（背景の暗い部分）をなくす
